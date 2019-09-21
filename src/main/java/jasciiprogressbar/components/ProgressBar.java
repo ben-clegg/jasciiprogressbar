@@ -4,7 +4,7 @@ public class ProgressBar
 {
     private int width;
 
-    private AbsoluteProgress progress;
+    private final AbsoluteProgress progress;
 
     public ProgressBar(AbsoluteProgress absoluteProgress, int barWidth)
     {
@@ -20,13 +20,7 @@ public class ProgressBar
     @Override
     public String toString()
     {
-        StringBuilder sb = new StringBuilder();
-
-        sb.append("<");
-        sb.append(makeBar());
-        sb.append(">");
-
-        return sb.toString();
+        return "<" + makeBar() + ">";
     }
 
     private String makeBar()

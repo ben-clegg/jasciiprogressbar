@@ -7,8 +7,8 @@ public class JAsciiProgressBar
 {
     private static final int DEFAULT_BAR_WIDTH = 10;
 
-    private AbsoluteProgress progress;
-    private ProgressBar bar;
+    private final AbsoluteProgress progress;
+    private final ProgressBar bar;
 
     private boolean drawAbsoluteProgress = true;
     private boolean drawPercentageProgress = true;
