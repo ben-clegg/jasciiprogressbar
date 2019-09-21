@@ -82,13 +82,15 @@ public class JAsciiProgressBar
             sb.append(progress);
             sb.append(" ");
         }
-        if (drawPercentageProgress)
+
+        if(drawProgressBar)
         {
-            sb.append(progress.generatePercentageString(percentageDecimalPlaces));
+            sb.append(bar);
             sb.append(" ");
         }
-        if(drawProgressBar)
-            sb.append(bar);
+
+        if (drawPercentageProgress)
+            sb.append(progress.generatePercentageString(percentageDecimalPlaces));
 
         return sb.toString().trim();
     }

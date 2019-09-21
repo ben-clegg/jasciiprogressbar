@@ -44,6 +44,6 @@ public class AbsoluteProgress
 
     public String generatePercentageString(int decimalPlaces)
     {
-        return String.format("%3." + decimalPlaces + "f", getProportionValue() * 100) + "%";
+        return String.format("%." + decimalPlaces + "f", getProportionValue() * 100) + "%";
     }
 }
