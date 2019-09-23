@@ -1,5 +1,9 @@
 # JAsciiProgressBar
 
+A simple Java-based ASCII progress bar, for use in text-based interfaces.
+
+Example output: `1231/4670 <========----------------------> 26.4%`
+
 ## Installation
 
 - Download jasciiprogressbar.jar from the _Releases_ tab.
