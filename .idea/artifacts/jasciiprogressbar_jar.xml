@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/jasciiprogressbar_jar</output-path>
     <root id="archive" name="jasciiprogressbar.jar">
       <element id="module-output" name="jasciiprogressbar" />
+      <element id="module-source" name="jasciiprogressbar" />
     </root>
   </artifact>
 </component>

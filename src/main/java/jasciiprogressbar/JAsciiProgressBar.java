@@ -20,7 +20,7 @@ public class JAsciiProgressBar
     {
         if (args.length != 2)
         {
-            System.out.println("Example usage: java -jar JAsciiProgressBar.jar 12 100");
+            System.out.println("Example usage: java -jar jasciiprogressbar.jar 12 100");
             throw new IllegalArgumentException("Must include two integer arguments for current progress and final progress.");
         }
 
@@ -33,6 +33,7 @@ public class JAsciiProgressBar
         }
         catch (NumberFormatException numEx)
         {
+            System.out.println("Example usage: java -jar jasciiprogressbar.jar 12 100");
             throw new IllegalArgumentException("Arguments must be integers, of current progress and final progress.");
         }
     }
