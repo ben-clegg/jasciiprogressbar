@@ -16,6 +16,27 @@ public class JAsciiProgressBar
 
     private int percentageDecimalPlaces = 1;
 
+    public static void main(String[] args)
+    {
+        if (args.length != 2)
+        {
+            System.out.println("Example usage: java -jar JAsciiProgressBar.jar 12 100");
+            throw new IllegalArgumentException("Must include two integer arguments for current progress and final progress.");
+        }
+
+        try
+        {
+            int current = Integer.parseInt(args[0]);
+            int end = Integer.parseInt(args[1]);
+            JAsciiProgressBar bar = new JAsciiProgressBar(current, end);
+            System.out.println(bar);
+        }
+        catch (NumberFormatException numEx)
+        {
+            throw new IllegalArgumentException("Arguments must be integers, of current progress and final progress.");
+        }
+    }
+
     public JAsciiProgressBar(int endProgress)
     {
         this(0, endProgress);
